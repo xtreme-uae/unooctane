@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import styled from "styled-components";
 import useTheme from "../../theme/useTheme";
 import { Text } from "../../ui";
-import Box from "../box/Box";
+
 
 const Footer = () => {
   const {
@@ -21,21 +21,14 @@ const Footer = () => {
       <Text varient="body1" weight="medium">
         Made with ❤️ by{" "}
         <a
-          href="https://github.com/Ashik-AD"
+          href="#"
           target={"_blank"}
           className="text-primary"
         >
-          Ashik Dhimal
+          HMH Labz
         </a>
       </Text>
-      <Box display="flex" space={0.6}>
-        <a href="https://github.com/Ashik-AD" target={"_blank"}>
-          <Icon icon="mingcute:github-line" />
-        </a>
-        <a href="https://linkedin.com/in/ashikdhimal" target={"_blank"}>
-          <Icon icon="fa6-brands:linkedin-in" />{" "}
-        </a>
-      </Box>
+      
     </StyledFooter>
   );
 };

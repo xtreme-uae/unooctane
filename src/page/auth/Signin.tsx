@@ -42,7 +42,7 @@ const Signin = () => {
                 my={21}
               >
                 <Text varient="caption" weight="medium" skinColor paragraph>
-                  Email: <b>admin@triolo.com</b>
+                  Email: <b>admin@unooctane.com</b>
                 </Text>
                 <Text varient="caption" weight="medium" skinColor paragraph>
                   Passcode: <b>admin123</b>
@@ -55,8 +55,8 @@ const Signin = () => {
       }
       LeftContent={
         <AuthBanner
-          bgDark="https://i.ibb.co/n8YcMNb/login-dark.png"
-          bgLight="https://i.ibb.co/n8YcMNb/login-light.png"
+          bgDark="/../image/auth/login-dark.png"
+          bgLight="/../image/auth/login-light.png"
         />
       }
     />

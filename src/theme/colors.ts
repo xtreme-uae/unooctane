@@ -1,30 +1,22 @@
-export type red = {
-    name: 'red',
-    color: 'rgba(253, 93, 93, 1)'
+export type litegold = {
+    name: 'litegold',
+    color: 'rgba(244, 226, 163, 1)'
+}
+export type gold = {
+    name: 'gold',
+    color: 'rgba(216, 190, 136, 1)'
 }
 
-export type green = {
-    name: 'green',
-    color: 'rgba(60, 207, 78, 1)'
+export type brown = {
+    name: 'brown',
+    color: 'rgba(178, 142, 102, 1)'
 }
 
 export type purple = {
     name: 'purple',
-    color: 'rgba(166, 108, 255, 1)'
-}
-export type blue = {
-    name: 'blue',
-    color: 'rgba(0, 215, 255, 1)'
+    color: 'rgba(122, 86, 142, 1)'
 }
 
-export type orange = {
-    name: 'orange',
-    color: 'rgba(255, 91, 0, 1)'
-}
-export type pinky = {
-    name: 'pinky',
-    color: 'rgba(249, 72, 146, 1)'
-}
 export interface Dark {
     background: '#1B2430';
     foreground: '#252d3a';
@@ -37,7 +29,7 @@ export interface Light {
 }
 
 export type ThemeMode = Dark | Light;
-type ColorPallets = red | green | purple | blue | orange | pinky;
+type ColorPallets = litegold | gold | purple | brown;
 export type PrimaryColorName = ColorPallets["name"]
 export type PrimaryColorCode = ColorPallets['color']
 export type PrimaryColor = {
@@ -45,10 +37,8 @@ export type PrimaryColor = {
     color: PrimaryColorCode;
 }
 export const colorPallets: Array<PrimaryColor> = [
-    { name: 'red', color: "rgba(253, 93, 93, 1)" },
-    { name: 'green', color: "rgba(60, 207, 78, 1)" },
-    { name: 'blue', color: "rgba(0, 215, 255, 1)" },
-    { name: 'purple', color: "rgba(166, 108, 255, 1)" },
-    { name: 'orange', color: "rgba(255, 91, 0, 1)" },
-    { name: 'pinky', color: "rgba(249, 72, 146, 1)" },
+    { name: 'litegold', color: "rgba(244, 226, 163, 1)" },
+    { name: 'gold', color: "rgba(216, 190, 136, 1)" },
+    { name: 'brown', color: "rgba(178, 142, 102, 1)" },
+    { name: 'purple', color: "rgba(122, 86, 142, 1)" },
 ];

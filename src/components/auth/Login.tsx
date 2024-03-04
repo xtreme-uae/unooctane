@@ -7,15 +7,13 @@ import {
   Alert,
   Button,
   Checkbox,
-  DividerWithLabel,
   IconButton,
-  Text,
   TextField,
 } from "../../ui";
 import Box from "../box/Box";
 import Form from "../form/Form";
 import AuthFormContainer from "./AuthFormContainer";
-import ConnectionOptions from "./ConnectionOptions";
+
 import FormHeading from "./FormHeading";
 
 export interface LoginFormData {
@@ -54,7 +52,7 @@ const Login: FC<Props> = ({ onSubmit, hyperComponent }) => {
       setError("Please enter email & password");
       return;
     }
-    if (email.toLowerCase() !== "admin@triolo.com" || password !== "admin123") {
+    if (email.toLowerCase() !== "admin@unooctane.com" || password !== "admin123") {
       setError(
         "Invalid email or password. Please enter valid email & password."
       );
@@ -79,8 +77,8 @@ const Login: FC<Props> = ({ onSubmit, hyperComponent }) => {
       <Box width="100%" mb={20}>
         <Form onSubmit={handleSubmit} preventDefault>
           <FormHeading
-            title="Welcome to Triolo"
-            subtitle="Please sign-in to your account and start the adventure"
+            title="Welcome to UnoOctane"
+            subtitle="Please sign-in to your account"
           />
           {hyperComponent}
           <Box display="flex" flexDirection="column" space={1}>
@@ -136,16 +134,7 @@ const Login: FC<Props> = ({ onSubmit, hyperComponent }) => {
           </Box>
         </Form>
       </Box>
-      <Box mb={20}>
-        <Text varient="body2" align="center" secondary paragraph>
-          New on platform?{" "}
-          <Link to="/auth/register/" className="text-primary">
-            Create an account
-          </Link>
-        </Text>
-      </Box>
-      <DividerWithLabel label="Or" />
-      <ConnectionOptions />
+   
     </AuthFormContainer>
   );
 };

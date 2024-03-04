@@ -13,7 +13,7 @@ const ProtectedRoute = ({ children }: { children: ReactNode }) => {
         return navigate("/auth/login/");
       } else {
         if (pathname == "/") {
-          navigate("/dashboards/crm/");
+          navigate("/dashboards/analytics/");
         }
       }
     }

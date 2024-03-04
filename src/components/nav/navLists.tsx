@@ -30,12 +30,14 @@ const formatGroupButton = (
 
 const navList: NavOptions[] = [
   {
-    parent: formatGroupButton("Dashboards", <Home />, "/dashboards/"),
-    childrens: [
-      format("CRM", "/dashboards/crm/"),
-      format("Analytics", "/dashboards/analytics/"),
-      format("Ecommerce", "/dashboards/ecommerce/"),
-    ],
+    label: "Dashboard",
+    path: "/dashboards/analytics/",
+    icon: <Home />,
+  },
+  {
+    label: "Investment",
+    path: "/investments/",
+    icon:< EmailOutlined />,
   },
   {
     label: "Email",
@@ -47,7 +49,8 @@ const navList: NavOptions[] = [
     path: "/apps/chat/",
     icon: <ChatBubbleOutlineRounded />,
   },
-  {
+  
+ /*{
     parent: formatGroupButton("Invoice", <DescriptionOutlined />, "/invoice/"),
     childrens: [
       format("List", "/invoice/list/"),
@@ -55,7 +58,7 @@ const navList: NavOptions[] = [
       format("Edit", "/invoice/edit/"),
       format("Add", "/invoice/add/"),
     ],
-  },
+  }, */
   {
     parent: formatGroupButton("User", <PersonOutline />, "/user/"),
     childrens: [format("List", "/user/list/"), format("View", "/user/view/")],
@@ -99,11 +102,11 @@ const navList: NavOptions[] = [
           ),
         ],
       },
-      format("Pricing", "/pages/pricing/", <SellOutlined />),
-      format("FAQ", "/pages/faq/", <CampaignOutlined />),
+    /*  format("Pricing", "/pages/pricing/", <SellOutlined />),
+      format("FAQ", "/pages/faq/", <CampaignOutlined />),*/
     ],
   },
-  {
+/*  {
     parent: formatGroupButton(
       "Charts",
       <Icon icon="mdi:chart-donut" />,
@@ -124,8 +127,8 @@ const navList: NavOptions[] = [
     childrens: [
       format("Advanced", "/ui/cards/advanced/"),
       format("Statistics", "/ui/cards/statistics/"),
-      format("Widgets", "/ui/cards/widgets/"),
+      
     ],
-  },
+  },*/
 ];
 export default navList;
