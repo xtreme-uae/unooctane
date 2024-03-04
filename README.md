@@ -53,13 +53,4 @@ This is a static admin dashboard mockup/clone from <a href="https://demos.themes
 - [ ] Add real authentication
 - [ ] Add Skeleton loading indicators
 
-## Acknowledgments
 
-I find these resources usefull during building this project.
-
-- [Materio Theme for the project inspiration](https://demos.themeselection.com/materio-mui-react-nextjs-admin-template/demo-1/dashboards/crm/)
-- [Reactjs Doc](https://beta.reactjs.org/)
-- [Reactjs Patterns](https://react-typescript-cheatsheet.netlify.app/)
-- [Material-UI for component inspiration](https://mui.com/material-ui/)
-- [Imgdb.com for hosting project images](https://imgbb.com/)
-- [How to write Github Readme.md from Auth. @othneildrew](https://github.com/othneildrew/Best-README-Template)
